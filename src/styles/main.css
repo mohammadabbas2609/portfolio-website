@@ -1,0 +1,46 @@
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  height: 75vh;
+  line-height: 2;
+  color: #23001e;
+}
+
+.main .intro h5 {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.main .intro h3 {
+  letter-spacing: 2px;
+}
+
+.img {
+  position: relative;
+  cursor: pointer;
+}
+
+.img p {
+  display: none;
+  padding: 0.7rem;
+  position: absolute;
+  top: -5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: 400;
+}
+
+.img:hover p {
+  display: block;
+}
+
+@media (max-width: 570px) {
+  .img p {
+    top: -20%;
+    padding: 0.3rem;
+  }
+}

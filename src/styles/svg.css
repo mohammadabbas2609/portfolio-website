@@ -1,0 +1,28 @@
+.wave {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave.top {
+  top: 0;
+  left: 0;
+}
+
+.wave.bottom {
+  bottom: 0;
+  left: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(114% + 1.3px);
+}
+
+@media (max-width: 570px) {
+  .wave svg {
+    height: 75px;
+  }
+}

@@ -1,0 +1,39 @@
+.about {
+  position: relative;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #23001e;
+  height: 50vh;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-me .content p {
+  margin: 1rem 0;
+}
+
+.about-me .content span {
+  font-weight: bold;
+}
+
+@media (max-width: 570px) {
+  .about h3 {
+    margin-top: 5rem;
+  }
+}
