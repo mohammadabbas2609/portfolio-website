@@ -5,6 +5,7 @@ import { useEffect, useRef } from "react";
 const Navbar = ({ mainVisible }) => {
   const navRef = useRef(null);
   const toggleRef = useRef(null);
+  const burgerRef = useRef(null);
 
   useEffect(() => {
     if (!mainVisible) {
@@ -15,7 +16,11 @@ const Navbar = ({ mainVisible }) => {
   }, [mainVisible]);
 
   function toggleMenu() {
-    if (toggleRef.current) toggleRef.current.classList.toggle("show");
+    if (toggleRef.current) {
+      toggleRef.current.classList.toggle("show");
+
+      burgerRef.current.classList.toggle("toggle");
+    }
   }
 
   return (
@@ -54,10 +59,10 @@ const Navbar = ({ mainVisible }) => {
           </a>
         </li>
       </ul>
-      <div className="lines" onClick={toggleMenu}>
-        <div></div>
-        <div></div>
-        <div></div>
+      <div className="lines" onClick={toggleMenu} ref={burgerRef}>
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
       </div>
     </motion.nav>
   );
