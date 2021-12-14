@@ -1,8 +1,7 @@
 import "../styles/main.css";
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
-import { useRef, useState } from "react";
-import { useEffect } from "react/cjs/react.development";
+import { useRef, useState, useEffect } from "react";
 
 const Main = () => {
   const mainRef = useRef(null);

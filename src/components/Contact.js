@@ -62,7 +62,13 @@ const Contact = () => {
       <div className="contact-me container">
         <h3>Connect with me</h3>
         <div className="contact-form">
-          <form ref={arrowRef} method="post" onClick={animatedForm}>
+          <form
+            ref={arrowRef}
+            method="post"
+            name="contact-me"
+            data-netlify="true"
+            onClick={animatedForm}
+          >
             <input type="hidden" name="form-name" value="contact-me" />
             <div className="field-name active-field">
               <img src="/contact-form-images/user.png" alt="user" />
@@ -72,6 +78,7 @@ const Contact = () => {
                 onChange={e => {
                   setName(e.target.value);
                 }}
+                name="name"
                 value={name}
                 required
               />
@@ -85,6 +92,7 @@ const Contact = () => {
               <img src="/contact-form-images/mail.png" alt="mail" />
               <input
                 type="email"
+                name="email"
                 onChange={e => {
                   setEmail(e.target.value);
                 }}
@@ -101,6 +109,7 @@ const Contact = () => {
             <div className="field-question inactive-field">
               <img src="/contact-form-images/question.png" alt="ask-me" />
               <input
+                name="message"
                 type="text"
                 onChange={e => {
                   setMessage(e.target.value);
