@@ -10,9 +10,16 @@ const Contact = () => {
 
   function animatedForm(e) {
     if (e.target.className === "arrow") {
+      if (e.target.parentElement.tagName === "BUTTON") {
+        return;
+      }
       const input = e.target.previousElementSibling;
       const parent = e.target.parentElement;
       const nextForm = parent.nextElementSibling;
+
+      input.className.includes("error-input") &&
+        input.classList.remove("error-input");
+
       if (parent.className.includes("active-field")) {
         if (input.type === "text" && validateUser(input)) {
           nextSlide(parent, nextForm);
@@ -24,13 +31,10 @@ const Contact = () => {
         } else {
           parent.style.backgroundColor = "rgb(189,87,87)";
           parent.style.animation = "shake 0.5s ease";
-          input.style.color = "rgb(255,255,255)";
+          input.style.color = "white";
+          input.classList.add("error-input");
         }
       }
-    }
-
-    if (name && message && email) {
-      console.log("All form filled");
     }
   }
 
@@ -58,7 +62,8 @@ const Contact = () => {
       <div className="contact-me container">
         <h3>Connect with me</h3>
         <div className="contact-form">
-          <form ref={arrowRef} onClick={animatedForm}>
+          <form ref={arrowRef} method="post" onClick={animatedForm}>
+            <input type="hidden" name="form-name" value="contact-me" />
             <div className="field-name active-field">
               <img src="/contact-form-images/user.png" alt="user" />
               <input
@@ -104,16 +109,13 @@ const Contact = () => {
                 value={message}
                 required
               />
-              <img
-                className="arrow"
-                src="/contact-form-images/arrow.png"
-                alt="arrow"
-                type="submit"
-              />
-            </div>
-            <div className="field-finish inactive-field">
-              <img src="/contact-form-images/heart.png" alt="heart" />
-              <p>Will get back to you soooon !</p>
+              <button className="last-field" type="submit">
+                <img
+                  src="/contact-form-images/arrow.png"
+                  alt="arrow"
+                  className="arrow"
+                />
+              </button>
             </div>
           </form>
         </div>

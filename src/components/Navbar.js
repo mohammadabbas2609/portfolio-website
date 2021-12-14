@@ -31,7 +31,7 @@ const Navbar = ({ mainVisible }) => {
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
     >
-      <h2 className="nav-brand">Web Dev💻</h2>
+      <h2 className="nav-brand">Web Developer</h2>
       <ul className="nav-links" ref={toggleRef}>
         <li className="link">
           <a href="#home" className="link-item">

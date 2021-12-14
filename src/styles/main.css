@@ -39,6 +39,9 @@
 }
 
 @media (max-width: 570px) {
+  .main .intro h5 {
+    margin: 1rem 0;
+  }
   .img p {
     top: -20%;
     padding: 0.3rem;

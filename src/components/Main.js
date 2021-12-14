@@ -28,7 +28,7 @@ const Main = () => {
         <div className="main">
           <motion.div
             className="intro"
-            initial={{ x: -700 }}
+            initial={{ x: -800 }}
             animate={{ x: 0 }}
             transition={{ duration: 1, delay: 0.6 }}
           >

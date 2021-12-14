@@ -10,7 +10,8 @@
 }
 
 .contact .contact-me h3 {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
 }
 
 .contact img {
@@ -25,7 +26,7 @@
 .field-question,
 .field-finish {
   margin-top: 2rem;
-  padding: 1rem;
+  padding: 0.5rem;
   background: #fff;
   position: absolute;
   top: 50%;
@@ -48,7 +49,7 @@
   outline: none;
   font-weight: bolder;
   font-size: 1rem;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
 }
 
 .contact-me form input::placeholder {
@@ -56,11 +57,12 @@
   text-transform: uppercase;
 }
 
-.contact-me .field-finish p {
-  color: #000;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-right: 1.5rem;
+.error-input::placeholder {
+  color: #fff;
+}
+
+.contact-me .field-finish {
+  padding: 2rem;
 }
 
 div.inactive-field {
@@ -73,6 +75,10 @@ div.active-field {
   opacity: 1;
   pointer-events: all;
   transform: translate(-50%, -50%);
+}
+
+.contact-me .last-field {
+  border: 0;
 }
 
 @keyframes shake {

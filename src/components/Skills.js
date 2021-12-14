@@ -70,7 +70,6 @@ const Skills = () => {
             <img src="./skills/javascript.svg" alt="js" />
             <img src="./skills/git.svg" alt="git" />
             <img src="./skills/react.svg" alt="react" />
-            <img src="./skills/nextjs.png" alt="nextjs" />
           </motion.div>
           <motion.div
             className="tech2"
@@ -79,11 +78,10 @@ const Skills = () => {
             animate={controls}
             variants={transitionBox}
           >
+            <img src="./skills/nextjs.png" alt="nextjs" />
             <img src="./skills/nodejs.svg" alt="node" />
             <img src="./skills/mongodb.svg" alt="mongodb" />
-            <img src="./skills/graphql.svg" alt="graphql" />
             <img src="./skills/docker.svg" alt="docker" />
-            <img src="./skills/kubernetes.svg" alt="kubernetes" />
           </motion.div>
         </div>
       </div>
