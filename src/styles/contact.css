@@ -23,8 +23,7 @@
 
 .field-name,
 .field-mail,
-.field-question,
-.field-finish {
+.field-question {
   margin-top: 2rem;
   padding: 0.5rem;
   background: #fff;
@@ -90,5 +89,13 @@ div.active-field {
   }
   100% {
     transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+@media (max-width: 440px) {
+  .field-name,
+  .field-mail,
+  .field-question {
+    width: 320px;
   }
 }
