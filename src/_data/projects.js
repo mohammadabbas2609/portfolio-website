@@ -1,5 +1,13 @@
 const projects = [
   {
+    title: "Docmycode CLI Tool",
+    description:
+      "Docmycode is a lightweight CLI tool for documenting code. Users can create dynamic documentation using this tool. Supports Caching to provide essential speed and performant experience. Also, all the data is persisted locally on users' hard drives so it could be shared with others.",
+    live: "https://www.npmjs.com/package/docmycode",
+    repo: "https://github.com/mohammadabbas2609/docmycode/#readme",
+    image: "./projects/docmycode.png",
+  },
+  {
     title: "Gadgets360",
     description:
       "Online Gadgets store built with React as an frontend redux as state manager node as backend and MongoDB atlas as database.",
@@ -26,7 +34,7 @@ const projects = [
   {
     title: "Expense Tracker",
     description:
-      "Expense tracker manages the income and expenses of users and display them in beautiful manner along with PIE charts.It's built with MERN stack.",
+      "Expense tracker manages the income and expenses of users and displays them in a beautiful manner along with PIE charts. It's built with a MERN stack.",
     live: "https://track-your-expenses2609.netlify.app/",
     repo: "https://github.com/mohammadabbas2609/expense-tracker/#readme",
     image: "./projects/expensetracker.png",

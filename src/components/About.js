@@ -79,6 +79,16 @@ const About = () => {
             working as a local freelancer, reach out to me at{" "}
             <span> mohammadabbas2609@gmail.com</span>.
           </p>
+          <p>
+            <a
+              href="/abbas.pdf"
+              target="_blank"
+              className="btn"
+              // download={true}
+            >
+              Get Resume
+            </a>
+          </p>
         </div>
       </motion.section>
     </div>

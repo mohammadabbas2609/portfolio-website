@@ -78,6 +78,7 @@ const Skills = () => {
             animate={controls}
             variants={transitionBox}
           >
+            <img src="./skills/typescript.svg" alt="typescript" />
             <img src="./skills/nextjs.png" alt="nextjs" />
             <img src="./skills/nodejs.svg" alt="node" />
             <img src="./skills/mongodb.svg" alt="mongodb" />
