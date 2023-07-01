@@ -81,7 +81,7 @@ const Skills = () => {
           >
             <img src="./skills/typescript.svg" alt="typescript" />
             <img src="./skills/nextjs.png" alt="nextjs" />
-            <img src="./skills/nuxt.png" alt="nextjs" />
+            <img src="./skills/nuxt.svg" alt="nextjs" />
             <img src="./skills/nodejs.svg" alt="node" />
             <img src="./skills/mongodb.svg" alt="mongodb" />
             <img src="./skills/docker.svg" alt="docker" />
