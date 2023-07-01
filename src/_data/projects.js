@@ -11,7 +11,7 @@ const projects = [
     title: "Gadgets360",
     description:
       "Online Gadgets store built with React as an frontend redux as state manager node as backend and MongoDB atlas as database.",
-    live: "https://gadgets360.herokuapp.com/",
+    live: "https://gadget360-digital-shop.onrender.com",
     repo: "https://github.com/mohammadabbas2609/Gadgets360/#readme",
     image: "./projects/gadgets360.png",
   },
@@ -19,7 +19,7 @@ const projects = [
     title: "DJ Events",
     description:
       " Event Management website where Musician or DJ's can host thier upcoming event this website is built using the MERN stack along with integration of Mapbox API to get the location of events",
-    live: "https://dj-events-2609.herokuapp.com/",
+    live: "https://dj-events-lzef.onrender.com",
     repo: "https://github.com/mohammadabbas2609/dj-events/#readme",
     image: "./projects/djevents.png",
   },
