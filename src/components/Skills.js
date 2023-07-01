@@ -70,6 +70,7 @@ const Skills = () => {
             <img src="./skills/javascript.svg" alt="js" />
             <img src="./skills/git.svg" alt="git" />
             <img src="./skills/react.svg" alt="react" />
+            <img src="./skills/vue.svg" alt="vue" />
           </motion.div>
           <motion.div
             className="tech2"
@@ -80,6 +81,7 @@ const Skills = () => {
           >
             <img src="./skills/typescript.svg" alt="typescript" />
             <img src="./skills/nextjs.png" alt="nextjs" />
+            <img src="./skills/nuxt.png" alt="nextjs" />
             <img src="./skills/nodejs.svg" alt="node" />
             <img src="./skills/mongodb.svg" alt="mongodb" />
             <img src="./skills/docker.svg" alt="docker" />
