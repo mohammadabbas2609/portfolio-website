@@ -34,7 +34,7 @@ const Main = () => {
             <h5>Hi, I'm Abbas.</h5>
             <h3>MERN Stack Developer</h3>
             <p>Who makes or sometime breaks websites.</p>
-            <p>Stan in real life ✌</p>
+            {/* <p>Stan in real life ✌</p> */}
             <a href="#about" className="btn">
               Know More.
             </a>
